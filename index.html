@@ -1,0 +1,996 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Instituto Tecnológico Innova | Formando Líderes en Tecnología</title>
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Bootstrap 5.3 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-bs-spy="scroll" data-bs-target="#mainNavbar" data-bs-offset="100" tabindex="0">
+
+  <!-- ================= NAVBAR ================= -->
+  <header class="sticky-top">
+    <nav id="mainNavbar" class="navbar navbar-expand-lg navbar-dark bg-innova-dark py-3 shadow-sm">
+      <div class="container">
+        <!-- Brand Logo -->
+        <a class="navbar-brand d-flex align-items-center gap-2" href="#hero">
+          <span class="brand-logo-icon d-inline-flex align-items-center justify-content-center">
+            <!-- Inline SVG Logo -->
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M12 2L2 7L12 12L22 7L12 2Z" stroke="#2bb673" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M2 17L12 22L22 17" stroke="#2bb673" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M2 12L12 17L22 12" stroke="#68d391" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </span>
+          <span class="brand-title">
+            <span class="fw-bold text-white">IT</span> <span class="fw-extrabold text-innova-accent">INNOVA</span>
+            <small class="d-block text-gray-300 brand-subtitle">Instituto Tecnológico</small>
+          </span>
+        </a>
+
+        <!-- Mobile Toggler Button -->
+        <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Abrir navegación">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Navbar Links -->
+        <div class="collapse navbar-collapse" id="navbarContent">
+          <ul class="navbar-nav mx-auto mb-2 mb-lg-0 text-uppercase fw-semibold nav-menu">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#hero">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#nosotros">Nosotros</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#carreras">Carreras</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#beneficios">Beneficios</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#registro">Admisión</a>
+            </li>
+          </ul>
+
+          <div class="d-flex align-items-center gap-2">
+            <a href="#registro" class="btn btn-innova-accent px-4 py-2 fw-bold text-dark rounded-pill shadow-sm">
+              <i class="bi bi-pencil-square me-1"></i> Inscríbete Hoy
+            </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- ================= HERO SECTION ================= -->
+  <section id="hero" class="hero-section text-white py-5 py-lg-6 position-relative overflow-hidden">
+    <!-- SVG Pattern Background (Decorative, no external images) -->
+    <div class="hero-bg-pattern position-absolute top-0 start-0 w-100 h-100" aria-hidden="true">
+      <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <pattern id="grid-pattern" width="40" height="40" patternUnits="userSpaceOnUse">
+            <path d="M 40 0 L 0 0 0 40" fill="none" stroke="rgba(255, 255, 255, 0.05)" stroke-width="1"/>
+          </pattern>
+          <radialGradient id="hero-glow" cx="80%" cy="30%" r="60%">
+            <stop offset="0%" stop-color="#2bb673" stop-opacity="0.25"/>
+            <stop offset="100%" stop-color="#102e1f" stop-opacity="0"/>
+          </radialGradient>
+        </defs>
+        <rect width="100%" height="100%" fill="url(#grid-pattern)" />
+        <rect width="100%" height="100%" fill="url(#hero-glow)" />
+      </svg>
+    </div>
+
+    <div class="container position-relative z-1 py-4 py-md-5">
+      <div class="row align-items-center g-5">
+        <!-- Left Hero Column -->
+        <div class="col-lg-7 text-center text-lg-start">
+          <div class="d-inline-flex align-items-center gap-2 px-3 py-1 mb-3 rounded-pill badge-innova">
+            <span class="badge-dot"></span>
+            <span class="small fw-semibold text-innova-accent">Admisiones 2026 Abiertas</span>
+          </div>
+
+          <h1 class="display-4 fw-extrabold mb-3 text-white hero-headline">
+            Transforma tu Pasión en <span class="text-innova-accent">Innovación Tecnológica</span>
+          </h1>
+
+          <p class="lead text-gray-200 mb-4 pe-lg-4 hero-description">
+            En el <strong>Instituto Tecnológico Innova</strong> te preparamos con programas de alta demanda laboral, laboratorios de vanguardia y formación práctica para liderar la era digital.
+          </p>
+
+          <div class="d-flex flex-wrap gap-3 justify-content-center justify-content-lg-start mb-4">
+            <a href="#registro" class="btn btn-innova-accent btn-lg px-4 py-3 fw-bold rounded-pill text-dark shadow">
+              <i class="bi bi-mortarboard-fill me-2"></i> Postular Ahora
+            </a>
+            <a href="#carreras" class="btn btn-outline-light btn-lg px-4 py-3 fw-bold rounded-pill">
+              <i class="bi bi-grid-fill me-2"></i> Ver Carreras
+            </a>
+          </div>
+
+          <!-- Hero Metrics -->
+          <div class="row g-3 pt-3 border-top border-secondary-subtle">
+            <div class="col-4">
+              <div class="stat-card">
+                <h3 class="fw-bold mb-0 text-innova-accent">94%</h3>
+                <p class="small text-gray-300 mb-0">Empleabilidad</p>
+              </div>
+            </div>
+            <div class="col-4">
+              <div class="stat-card">
+                <h3 class="fw-bold mb-0 text-innova-accent">+50</h3>
+                <p class="small text-gray-300 mb-0">Convenios Tech</p>
+              </div>
+            </div>
+            <div class="col-4">
+              <div class="stat-card">
+                <h3 class="fw-bold mb-0 text-innova-accent">100%</h3>
+                <p class="small text-gray-300 mb-0">Práctico y Aplicado</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Hero Column (SVG Interactive Graphic instead of external image) -->
+        <div class="col-lg-5">
+          <div class="hero-graphic-card p-4 rounded-4 shadow-lg border border-success-subtle position-relative">
+            <div class="d-flex align-items-center justify-content-between mb-3 pb-3 border-bottom border-secondary-subtle">
+              <div class="d-flex align-items-center gap-2">
+                <span class="hero-dot bg-danger rounded-circle"></span>
+                <span class="hero-dot bg-warning rounded-circle"></span>
+                <span class="hero-dot bg-success rounded-circle"></span>
+                <span class="ms-2 small text-gray-300 font-monospace">innova_terminal.sh</span>
+              </div>
+              <span class="badge bg-dark text-innova-accent font-monospace border border-secondary">v2.6.0</span>
+            </div>
+
+            <!-- Vector Graphic Showcase -->
+            <div class="text-center py-3">
+              <svg class="hero-vector-art w-100" viewBox="0 0 380 220" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <!-- Server / Chip base -->
+                <rect x="40" y="30" width="300" height="160" rx="16" fill="#0d2419" stroke="#2bb673" stroke-width="2"/>
+                <rect x="55" y="45" width="270" height="40" rx="8" fill="#133926" stroke="#236e49" stroke-width="1"/>
+                
+                <!-- Circuit traces -->
+                <path d="M75 65 H 180 M200 65 H 305" stroke="#2bb673" stroke-width="3" stroke-linecap="round"/>
+                <circle cx="190" cy="65" r="5" fill="#2bb673"/>
+                <circle cx="85" cy="65" r="3" fill="#68d391"/>
+                <circle cx="295" cy="65" r="3" fill="#68d391"/>
+
+                <!-- Terminal code block -->
+                <rect x="55" y="95" width="160" height="80" rx="8" fill="#071710" stroke="#1d4d35" stroke-width="1"/>
+                <line x1="70" y1="115" x2="160" y2="115" stroke="#2bb673" stroke-width="3" stroke-linecap="round"/>
+                <line x1="70" y1="130" x2="190" y2="130" stroke="#9ae6b4" stroke-width="3" stroke-linecap="round"/>
+                <line x1="70" y1="145" x2="140" y2="145" stroke="#48bb78" stroke-width="3" stroke-linecap="round"/>
+                <line x1="70" y1="160" x2="175" y2="160" stroke="#cbd5e1" stroke-width="2" stroke-linecap="round"/>
+
+                <!-- Right tech badge icon -->
+                <rect x="230" y="95" width="95" height="80" rx="8" fill="#133926" stroke="#2bb673" stroke-width="1"/>
+                <circle cx="277" cy="135" r="22" fill="#0d2419" stroke="#2bb673" stroke-width="2"/>
+                <path d="M277 122 L277 148 M264 135 L290 135" stroke="#2bb673" stroke-width="2.5" stroke-linecap="round"/>
+                <circle cx="277" cy="135" r="8" fill="#2bb673"/>
+              </svg>
+            </div>
+
+            <div class="graphic-highlights p-3 rounded-3 mt-2 bg-innova-dark-alt">
+              <div class="d-flex align-items-center justify-content-between text-gray-200 small">
+                <span><i class="bi bi-shield-check text-innova-accent me-1"></i> Acreditación Institucional</span>
+                <span class="badge bg-success-subtle text-success">Vigente</span>
+              </div>
+              <div class="d-flex align-items-center justify-content-between text-gray-200 small mt-2">
+                <span><i class="bi bi-cpu text-innova-accent me-1"></i> Talleres & Labs Especializados</span>
+                <span class="text-innova-accent fw-bold">100% Equipados</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= ABOUT / INSTITUCIONAL ================= -->
+  <section id="nosotros" class="py-5 bg-innova-light">
+    <div class="container py-4">
+      <div class="row align-items-center g-5">
+        <div class="col-lg-6">
+          <div class="pe-lg-3">
+            <span class="badge bg-innova-badge text-innova-dark px-3 py-2 rounded-pill fw-bold text-uppercase mb-3">
+              Sobre Nuestra Institución
+            </span>
+            <h2 class="display-6 fw-bold text-innova-dark mb-3">
+              Educación Tecnológica con Enfoque al Futuro
+            </h2>
+            <p class="text-muted leading-relaxed mb-4">
+              El <strong>Instituto Tecnológico Innova</strong> es una casa de estudios superior líder en la formación de profesionales técnicos y especialistas digitales. Nuestro modelo educativo integra proyectos reales, tutoría con expertos de la industria y alianzas con empresas globales de software y telecomunicaciones.
+            </p>
+            <div class="row g-3">
+              <div class="col-sm-6">
+                <div class="feature-box d-flex align-items-start gap-3 p-3 rounded-3 bg-white shadow-sm border border-light-subtle">
+                  <div class="icon-circle bg-innova-primary text-white">
+                    <i class="bi bi-laptop fs-5"></i>
+                  </div>
+                  <div>
+                    <h6 class="fw-bold mb-1 text-innova-dark">Metodología Ágil</h6>
+                    <small class="text-muted">Aprende haciendo con proyectos desde el 1er ciclo.</small>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="feature-box d-flex align-items-start gap-3 p-3 rounded-3 bg-white shadow-sm border border-light-subtle">
+                  <div class="icon-circle bg-innova-primary text-white">
+                    <i class="bi bi-award fs-5"></i>
+                  </div>
+                  <div>
+                    <h6 class="fw-bold mb-1 text-innova-dark">Certificación Pro</h6>
+                    <small class="text-muted">Títulos a nombre de la nación y menciones tech.</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-6">
+          <div class="institution-stats-container p-4 p-md-5 rounded-4 bg-white shadow-sm border border-light-subtle">
+            <h4 class="fw-bold text-innova-dark mb-4 text-center">Nuestra Propuesta de Valor</h4>
+            
+            <div class="progress-item mb-4">
+              <div class="d-flex justify-content-between fw-semibold small mb-1">
+                <span class="text-innova-dark">Inserción Laboral en Empresas Tech</span>
+                <span class="text-innova-dark">94%</span>
+              </div>
+              <div class="progress" role="progressbar" aria-label="Inserción laboral" aria-valuenow="94" aria-valuemin="0" aria-valuemax="100">
+                <div class="progress-bar bg-innova-primary" style="width: 94%"></div>
+              </div>
+            </div>
+
+            <div class="progress-item mb-4">
+              <div class="d-flex justify-content-between fw-semibold small mb-1">
+                <span class="text-innova-dark">Horas Prácticas en Laboratorios</span>
+                <span class="text-innova-dark">85%</span>
+              </div>
+              <div class="progress" role="progressbar" aria-label="Horas prácticas" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
+                <div class="progress-bar bg-innova-accent" style="width: 85%"></div>
+              </div>
+            </div>
+
+            <div class="progress-item mb-4">
+              <div class="d-flex justify-content-between fw-semibold small mb-1">
+                <span class="text-innova-dark">Docentes Activos en la Industria</span>
+                <span class="text-innova-dark">100%</span>
+              </div>
+              <div class="progress" role="progressbar" aria-label="Docentes activos" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+                <div class="progress-bar bg-innova-primary" style="width: 100%"></div>
+              </div>
+            </div>
+
+            <div class="alert alert-light border border-success-subtle mb-0 p-3 rounded-3 d-flex align-items-center gap-3">
+              <i class="bi bi-info-circle-fill fs-4 text-innova-primary"></i>
+              <small class="text-muted">
+                Todos los programas cuentan con respaldo curricular adaptado a las demandas de la industria 4.0.
+              </small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= CARRERAS SECTION (BOOTSTRAP CARDS) ================= -->
+  <section id="carreras" class="py-5 bg-white">
+    <div class="container py-4">
+      <!-- Section Header -->
+      <div class="text-center max-w-700 mx-auto mb-5">
+        <span class="badge bg-innova-badge text-innova-dark px-3 py-2 rounded-pill fw-bold text-uppercase mb-2">
+          Oferta Académica
+        </span>
+        <h2 class="display-6 fw-bold text-innova-dark">Nuestras Carreras Profesionales</h2>
+        <p class="text-muted">
+          Planes de estudio actualizados, diseñados para responder a los estándares internacionales de innovación y tecnología.
+        </p>
+      </div>
+
+      <!-- Careers Grid with Bootstrap Cards (Se actualiza dinámicamente) -->
+      <div id="contenedorProgramas" class="row g-4">
+        
+        <!-- Card 1: Desarrollo de Software e IA -->
+        <div class="col-md-6 col-lg-4">
+          <div class="card career-card h-100 shadow-sm border-0 rounded-4 overflow-hidden">
+            <div class="career-img-container position-relative overflow-hidden">
+              <img id="img-carrera-1" class="career-card-img card-img-top career-img" src="" alt="Desarrollo de Software e IA" data-carrera="Desarrollo de Software e IA" data-index="1">
+              <span class="badge bg-innova-pill text-innova-dark fw-bold position-absolute top-0 end-0 m-3 shadow-sm">Alta Demanda</span>
+            </div>
+            
+            <div class="card-body p-4 d-flex flex-column">
+              <h5 class="card-title fw-bold text-innova-dark mb-2">Desarrollo de Software e IA</h5>
+              <p class="card-text text-muted flex-grow-1 small">
+                Diseña, desarrolla e implementa aplicaciones web, móviles y modelos de Inteligencia Artificial utilizando arquitecturas cloud modernas.
+              </p>
+              
+              <ul class="list-unstyled small text-muted my-3 border-top border-bottom py-2">
+                <li class="mb-1"><i class="bi bi-clock-history text-innova-accent me-2"></i><strong>Duración:</strong> 3 años (6 ciclos)</li>
+                <li class="mb-1"><i class="bi bi-mortarboard text-innova-accent me-2"></i><strong>Modalidad:</strong> Presencial / Híbrida</li>
+                <li><i class="bi bi-code-slash text-innova-accent me-2"></i><strong>Especialidad:</strong> Fullstack & Cloud</li>
+              </ul>
+              
+              <div class="mt-auto pt-2">
+                <button type="button" class="btn btn-innova-outline w-100 fw-bold rounded-pill select-career-btn" data-career="Desarrollo de Software e IA">
+                  Postular a esta carrera <i class="bi bi-arrow-right ms-1"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 2: Ciberseguridad y Redes -->
+        <div class="col-md-6 col-lg-4">
+          <div class="card career-card h-100 shadow-sm border-0 rounded-4 overflow-hidden">
+            <div class="career-img-container position-relative overflow-hidden">
+              <img id="img-carrera-2" class="career-card-img card-img-top career-img" src="" alt="Ciberseguridad y Redes" data-carrera="Ciberseguridad y Redes" data-index="2">
+              <span class="badge bg-innova-pill text-innova-dark fw-bold position-absolute top-0 end-0 m-3 shadow-sm">Estratégica</span>
+            </div>
+            
+            <div class="card-body p-4 d-flex flex-column">
+              <h5 class="card-title fw-bold text-innova-dark mb-2">Ciberseguridad y Redes</h5>
+              <p class="card-text text-muted flex-grow-1 small">
+                Protege infraestructuras críticas contra ciberamenazas, administra redes seguras y ejecuta análisis de vulnerabilidades éticas.
+              </p>
+              
+              <ul class="list-unstyled small text-muted my-3 border-top border-bottom py-2">
+                <li class="mb-1"><i class="bi bi-clock-history text-innova-accent me-2"></i><strong>Duración:</strong> 3 años (6 ciclos)</li>
+                <li class="mb-1"><i class="bi bi-mortarboard text-innova-accent me-2"></i><strong>Modalidad:</strong> Presencial</li>
+                <li><i class="bi bi-shield-lock text-innova-accent me-2"></i><strong>Especialidad:</strong> Ethical Hacking & SOC</li>
+              </ul>
+              
+              <div class="mt-auto pt-2">
+                <button type="button" class="btn btn-innova-outline w-100 fw-bold rounded-pill select-career-btn" data-career="Ciberseguridad y Redes">
+                  Postular a esta carrera <i class="bi bi-arrow-right ms-1"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 3: Ciencia de Datos & Big Data -->
+        <div class="col-md-6 col-lg-4">
+          <div class="card career-card h-100 shadow-sm border-0 rounded-4 overflow-hidden">
+            <div class="career-img-container position-relative overflow-hidden">
+              <img id="img-carrera-3" class="career-card-img card-img-top career-img" src="" alt="Ciencia de Datos & Big Data" data-carrera="Ciencia de Datos & Big Data" data-index="3">
+              <span class="badge bg-innova-pill text-innova-dark fw-bold position-absolute top-0 end-0 m-3 shadow-sm">Futuro Digital</span>
+            </div>
+            
+            <div class="card-body p-4 d-flex flex-column">
+              <h5 class="card-title fw-bold text-innova-dark mb-2">Ciencia de Datos & Big Data</h5>
+              <p class="card-text text-muted flex-grow-1 small">
+                Transforma grandes volúmenes de información en decisiones estratégicas empresariales mediante algoritmos de Machine Learning.
+              </p>
+              
+              <ul class="list-unstyled small text-muted my-3 border-top border-bottom py-2">
+                <li class="mb-1"><i class="bi bi-clock-history text-innova-accent me-2"></i><strong>Duración:</strong> 3 años (6 ciclos)</li>
+                <li class="mb-1"><i class="bi bi-mortarboard text-innova-accent me-2"></i><strong>Modalidad:</strong> Semipresencial / Virtual</li>
+                <li><i class="bi bi-graph-up-arrow text-innova-accent me-2"></i><strong>Especialidad:</strong> BI, Python & ML</li>
+              </ul>
+              
+              <div class="mt-auto pt-2">
+                <button type="button" class="btn btn-innova-outline w-100 fw-bold rounded-pill select-career-btn" data-career="Ciencia de Datos & Big Data">
+                  Postular a esta carrera <i class="bi bi-arrow-right ms-1"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 4: Cloud Computing & DevOps -->
+        <div class="col-md-6 col-lg-4">
+          <div class="card career-card h-100 shadow-sm border-0 rounded-4 overflow-hidden">
+            <div class="career-img-container position-relative overflow-hidden">
+              <img id="img-carrera-4" class="career-card-img card-img-top career-img" src="" alt="Cloud Computing & DevOps" data-carrera="Cloud Computing & DevOps" data-index="4">
+              <span class="badge bg-innova-pill text-innova-dark fw-bold position-absolute top-0 end-0 m-3 shadow-sm">Certif. Cloud</span>
+            </div>
+            
+            <div class="card-body p-4 d-flex flex-column">
+              <h5 class="card-title fw-bold text-innova-dark mb-2">Cloud Computing & DevOps</h5>
+              <p class="card-text text-muted flex-grow-1 small">
+                Administra entornos multi-nube con AWS, Azure y Google Cloud, automatizando pipelines de despliegue continuo y contenedores.
+              </p>
+              
+              <ul class="list-unstyled small text-muted my-3 border-top border-bottom py-2">
+                <li class="mb-1"><i class="bi bi-clock-history text-innova-accent me-2"></i><strong>Duración:</strong> 3 años (6 ciclos)</li>
+                <li class="mb-1"><i class="bi bi-mortarboard text-innova-accent me-2"></i><strong>Modalidad:</strong> Híbrida</li>
+                <li><i class="bi bi-cloud-check text-innova-accent me-2"></i><strong>Especialidad:</strong> Docker, K8s & Terraform</li>
+              </ul>
+              
+              <div class="mt-auto pt-2">
+                <button type="button" class="btn btn-innova-outline w-100 fw-bold rounded-pill select-career-btn" data-career="Cloud Computing & DevOps">
+                  Postular a esta carrera <i class="bi bi-arrow-right ms-1"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 5: Mecatrónica y Automatización -->
+        <div class="col-md-6 col-lg-4">
+          <div class="card career-card h-100 shadow-sm border-0 rounded-4 overflow-hidden">
+            <div class="career-img-container position-relative overflow-hidden">
+              <img id="img-carrera-5" class="career-card-img card-img-top career-img" src="" alt="Mecatrónica y Automatización" data-carrera="Mecatrónica y Automatización" data-index="5">
+              <span class="badge bg-innova-pill text-innova-dark fw-bold position-absolute top-0 end-0 m-3 shadow-sm">Industria 4.0</span>
+            </div>
+            
+            <div class="card-body p-4 d-flex flex-column">
+              <h5 class="card-title fw-bold text-innova-dark mb-2">Mecatrónica y Automatización</h5>
+              <p class="card-text text-muted flex-grow-1 small">
+                Integra sistemas robóticos, PLC y sensores IoT en líneas de producción inteligentes optimizando procesos industriales.
+              </p>
+              
+              <ul class="list-unstyled small text-muted my-3 border-top border-bottom py-2">
+                <li class="mb-1"><i class="bi bi-clock-history text-innova-accent me-2"></i><strong>Duración:</strong> 3 años (6 ciclos)</li>
+                <li class="mb-1"><i class="bi bi-mortarboard text-innova-accent me-2"></i><strong>Modalidad:</strong> Presencial</li>
+                <li><i class="bi bi-gear-wide-connected text-innova-accent me-2"></i><strong>Especialidad:</strong> Robótica & PLC</li>
+              </ul>
+              
+              <div class="mt-auto pt-2">
+                <button type="button" class="btn btn-innova-outline w-100 fw-bold rounded-pill select-career-btn" data-career="Mecatrónica y Automatización">
+                  Postular a esta carrera <i class="bi bi-arrow-right ms-1"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 6: Diseño y Desarrollo de Videojuegos -->
+        <div class="col-md-6 col-lg-4">
+          <div class="card career-card h-100 shadow-sm border-0 rounded-4 overflow-hidden">
+            <div class="career-img-container position-relative overflow-hidden">
+              <img id="img-carrera-6" class="career-card-img card-img-top career-img" src="" alt="Diseño y Desarrollo de Videojuegos" data-carrera="Diseño y Desarrollo de Videojuegos" data-index="6">
+              <span class="badge bg-innova-pill text-innova-dark fw-bold position-absolute top-0 end-0 m-3 shadow-sm">Creatividad Tech</span>
+            </div>
+            
+            <div class="card-body p-4 d-flex flex-column">
+              <h5 class="card-title fw-bold text-innova-dark mb-2">Diseño y Desarrollo de Videojuegos</h5>
+              <p class="card-text text-muted flex-grow-1 small">
+                Crea experiencias interactivas inmersivas, motores gráficos con Unity/Unreal Engine y narrativas digitales interactivas.
+              </p>
+              
+              <ul class="list-unstyled small text-muted my-3 border-top border-bottom py-2">
+                <li class="mb-1"><i class="bi bi-clock-history text-innova-accent me-2"></i><strong>Duración:</strong> 3 años (6 ciclos)</li>
+                <li class="mb-1"><i class="bi bi-mortarboard text-innova-accent me-2"></i><strong>Modalidad:</strong> Híbrida</li>
+                <li><i class="bi bi-controller text-innova-accent me-2"></i><strong>Especialidad:</strong> 3D, C# & Unreal</li>
+              </ul>
+              
+              <div class="mt-auto pt-2">
+                <button type="button" class="btn btn-innova-outline w-100 fw-bold rounded-pill select-career-btn" data-career="Diseño y Desarrollo de Videojuegos">
+                  Postular a esta carrera <i class="bi bi-arrow-right ms-1"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= BENEFICIOS SECTION ================= -->
+  <section id="beneficios" class="py-5 bg-innova-light">
+    <div class="container py-4">
+      <div class="text-center max-w-700 mx-auto mb-5">
+        <span class="badge bg-innova-badge text-innova-dark px-3 py-2 rounded-pill fw-bold text-uppercase mb-2">
+          ¿Por Qué Elegirnos?
+        </span>
+        <h2 class="display-6 fw-bold text-innova-dark">Beneficios Exclusivos de la Comunidad Innova</h2>
+        <p class="text-muted">
+          Respaldamos tu crecimiento profesional desde el primer día de clases hasta tu inserción al mercado tecnológico global.
+        </p>
+      </div>
+
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-3">
+          <div class="benefit-card p-4 rounded-4 bg-white shadow-sm h-100 text-center border border-light-subtle">
+            <div class="benefit-icon-wrapper mx-auto mb-3">
+              <i class="bi bi-pc-display text-innova-primary fs-2"></i>
+            </div>
+            <h5 class="fw-bold text-innova-dark mb-2">Laboratorios Cloud</h5>
+            <p class="text-muted small mb-0">
+              Acceso gratuito a servidores en la nube y licencias oficiales de software profesional.
+            </p>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3">
+          <div class="benefit-card p-4 rounded-4 bg-white shadow-sm h-100 text-center border border-light-subtle">
+            <div class="benefit-icon-wrapper mx-auto mb-3">
+              <i class="bi bi-briefcase text-innova-primary fs-2"></i>
+            </div>
+            <h5 class="fw-bold text-innova-dark mb-2">Bolsa de Empleo</h5>
+            <p class="text-muted small mb-0">
+              Convenios estratégicos con más de 120 compañías nacionales e internacionales de tecnología.
+            </p>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3">
+          <div class="benefit-card p-4 rounded-4 bg-white shadow-sm h-100 text-center border border-light-subtle">
+            <div class="benefit-icon-wrapper mx-auto mb-3">
+              <i class="bi bi-globe2 text-innova-primary fs-2"></i>
+            </div>
+            <h5 class="fw-bold text-innova-dark mb-2">Certificaciones Tech</h5>
+            <p class="text-muted small mb-0">
+              Prepárate y rinde exámenes para certificaciones de la industria (AWS, Cisco, Oracle, Google).
+            </p>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3">
+          <div class="benefit-card p-4 rounded-4 bg-white shadow-sm h-100 text-center border border-light-subtle">
+            <div class="benefit-icon-wrapper mx-auto mb-3">
+              <i class="bi bi-chat-dots text-innova-primary fs-2"></i>
+            </div>
+            <h5 class="fw-bold text-innova-dark mb-2">Tutoría Personalizada</h5>
+            <p class="text-muted small mb-0">
+              Acompañamiento académico permanente con mentores senior activos en proyectos reales.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= FORMULARIO DE REGISTRO / ADMISIÓN ================= -->
+  <section id="registro" class="py-5 bg-white position-relative">
+    <div class="container py-4">
+      <div class="row justify-content-center">
+        <div class="col-lg-10 col-xl-9">
+          
+          <div class="registration-wrapper rounded-4 shadow-lg overflow-hidden border border-light-subtle">
+            <div class="row g-0">
+              
+              <!-- Left decorative info sidebar -->
+              <div class="col-md-5 bg-innova-dark text-white p-4 p-lg-5 d-flex flex-column justify-content-between">
+                <div>
+                  <span class="badge bg-innova-accent text-dark fw-bold px-3 py-2 rounded-pill text-uppercase mb-3">
+                    Proceso de Admisión
+                  </span>
+                  <h3 class="fw-bold mb-3">Da el Primer Paso Hacia tu Futuro</h3>
+                  <p class="text-gray-200 small mb-4">
+                    Completa el formulario y un asesor académico se comunicará contigo en menos de 24 horas con la malla curricular y beneficios de beca.
+                  </p>
+
+                  <div class="contact-info-list mb-4">
+                    <div class="d-flex align-items-center gap-3 mb-3">
+                      <div class="contact-icon-box bg-innova-primary rounded-circle">
+                        <i class="bi bi-geo-alt-fill text-innova-accent"></i>
+                      </div>
+                      <div class="small">
+                        <strong class="d-block text-white">Campus Principal:</strong>
+                        <span class="text-gray-300">Av. Tecnológica 1050, Innova City</span>
+                      </div>
+                    </div>
+
+                    <div class="d-flex align-items-center gap-3 mb-3">
+                      <div class="contact-icon-box bg-innova-primary rounded-circle">
+                        <i class="bi bi-telephone-fill text-innova-accent"></i>
+                      </div>
+                      <div class="small">
+                        <strong class="d-block text-white">Central Telefónica:</strong>
+                        <span class="text-gray-300">+51 (01) 680-9000</span>
+                      </div>
+                    </div>
+
+                    <div class="d-flex align-items-center gap-3">
+                      <div class="contact-icon-box bg-innova-primary rounded-circle">
+                        <i class="bi bi-envelope-fill text-innova-accent"></i>
+                      </div>
+                      <div class="small">
+                        <strong class="d-block text-white">Email de Admisiones:</strong>
+                        <span class="text-gray-300">admision@itinnova.edu</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="trust-badge p-3 rounded-3 bg-innova-dark-alt border border-secondary mt-3">
+                  <div class="d-flex align-items-center gap-2 text-innova-accent small fw-bold">
+                    <i class="bi bi-patch-check-fill fs-5"></i>
+                    <span>Tus datos están protegidos bajo estricta confidencialidad.</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Right Form Column -->
+              <div class="col-md-7 p-4 p-lg-5 bg-white">
+                <div class="mb-4">
+                  <h4 class="fw-bold text-innova-dark mb-1">Formulario de Registro</h4>
+                  <p class="text-muted small">Por favor, ingresa tus datos para postular.</p>
+                </div>
+
+                <!-- Registration Form -->
+                <form id="registroForm" novalidate>
+                  
+                  <!-- Field: Nombre Completo -->
+                  <div class="mb-3">
+                    <label for="nombre" class="form-label fw-semibold text-innova-dark small">
+                      Nombre Completo <span class="text-danger">*</span>
+                    </label>
+                    <div class="input-group">
+                      <span class="input-group-text bg-light border-end-0 text-muted">
+                        <i class="bi bi-person"></i>
+                      </span>
+                      <input type="text" class="form-control border-start-0" id="nombre" name="nombre" placeholder="Ej. Carlos Mendoza Ruiz" required>
+                    </div>
+                    <div class="invalid-feedback" id="nombreFeedback">
+                      Por favor, ingresa tu nombre completo (mínimo 3 caracteres, solo letras).
+                    </div>
+                  </div>
+
+                  <!-- Field: Correo Electrónico -->
+                  <div class="mb-3">
+                    <label for="email" class="form-label fw-semibold text-innova-dark small">
+                      Correo Electrónico <span class="text-danger">*</span>
+                    </label>
+                    <div class="input-group">
+                      <span class="input-group-text bg-light border-end-0 text-muted">
+                        <i class="bi bi-envelope"></i>
+                      </span>
+                      <input type="email" class="form-control border-start-0" id="email" name="email" placeholder="ejemplo@correo.com" required>
+                    </div>
+                    <div class="invalid-feedback" id="emailFeedback">
+                      Ingresa un correo electrónico con formato válido (ejemplo@dominio.com).
+                    </div>
+                  </div>
+
+                  <!-- Field: Teléfono / WhatsApp -->
+                  <div class="mb-3">
+                    <label for="telefono" class="form-label fw-semibold text-innova-dark small">
+                      Teléfono / WhatsApp <span class="text-danger">*</span>
+                    </label>
+                    <div class="input-group">
+                      <span class="input-group-text bg-light border-end-0 text-muted">
+                        <i class="bi bi-telephone"></i>
+                      </span>
+                      <input type="tel" class="form-control border-start-0" id="telefono" name="telefono" placeholder="Ej. 987654321" required>
+                    </div>
+                    <div class="invalid-feedback" id="telefonoFeedback">
+                      Ingresa un número telefónico válido (entre 9 y 12 dígitos).
+                    </div>
+                  </div>
+
+                  <!-- NUEVO CAMPO: Fecha de Nacimiento y Género -->
+                  <div class="row g-3 mb-3">
+                    <div class="col-sm-6">
+                      <label for="fecha" class="form-label fw-semibold text-innova-dark small">
+                        Fecha de Nacimiento <span class="text-danger">*</span>
+                      </label>
+                      <div class="input-group">
+                        <span class="input-group-text bg-light border-end-0 text-muted">
+                          <i class="bi bi-calendar-event"></i>
+                        </span>
+                        <input type="date" class="form-control border-start-0" id="fecha" name="fecha" required>
+                      </div>
+                      <div class="invalid-feedback" id="fechaFeedback">
+                        Por favor, ingresa tu fecha de nacimiento.
+                      </div>
+                    </div>
+
+                    <div class="col-sm-6">
+                      <label class="form-label fw-semibold text-innova-dark small d-block">
+                        Género <span class="text-danger">*</span>
+                      </label>
+                      <div class="d-flex align-items-center gap-3 pt-2">
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="genero" id="generoM" value="Masculino" checked required>
+                          <label class="form-check-label small text-muted" for="generoM">Masculino</label>
+                        </div>
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="genero" id="generoF" value="Femenino" required>
+                          <label class="form-check-label small text-muted" for="generoF">Femenino</label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Field: Carrera de Interés -->
+                  <div class="mb-3">
+                    <label for="carrera" class="form-label fw-semibold text-innova-dark small">
+                      Carrera de Interés <span class="text-danger">*</span>
+                    </label>
+                    <div class="input-group">
+                      <span class="input-group-text bg-light border-end-0 text-muted">
+                        <i class="bi bi-mortarboard"></i>
+                      </span>
+                      <select class="form-select border-start-0" id="carrera" name="carrera" required>
+                        <option value="" selected disabled>Selecciona una carrera...</option>
+                        <option value="Desarrollo de Software e IA">Desarrollo de Software e IA</option>
+                        <option value="Ciberseguridad y Redes">Ciberseguridad y Redes</option>
+                        <option value="Ciencia de Datos & Big Data">Ciencia de Datos & Big Data</option>
+                        <option value="Cloud Computing & DevOps">Cloud Computing & DevOps</option>
+                        <option value="Mecatrónica y Automatización">Mecatrónica y Automatización</option>
+                        <option value="Diseño y Desarrollo de Videojuegos">Diseño y Desarrollo de Videojuegos</option>
+                      </select>
+                    </div>
+                    <div class="invalid-feedback" id="carreraFeedback">
+                      Por favor, selecciona una carrera de tu interés.
+                    </div>
+                  </div>
+
+                  <!-- Field: Modalidad de Estudio -->
+                  <div class="mb-3">
+                    <label for="modalidad" class="form-label fw-semibold text-innova-dark small">
+                      Modalidad Preferida <span class="text-danger">*</span>
+                    </label>
+                    <div class="input-group">
+                      <span class="input-group-text bg-light border-end-0 text-muted">
+                        <i class="bi bi-calendar3"></i>
+                      </span>
+                      <select class="form-select border-start-0" id="modalidad" name="modalidad" required>
+                        <option value="" selected disabled>Selecciona la modalidad...</option>
+                        <option value="Presencial (Campus Central)">Presencial (Campus Central)</option>
+                        <option value="Híbrida (Semipresencial)">Híbrida (Semipresencial)</option>
+                        <option value="100% Virtual">100% Virtual</option>
+                      </select>
+                    </div>
+                    <div class="invalid-feedback" id="modalidadFeedback">
+                      Selecciona tu modalidad de preferencia.
+                    </div>
+                  </div>
+
+                  <!-- NUEVO CAMPO: Comentarios o Consultas -->
+                  <div class="mb-3">
+                    <label for="comentario" class="form-label fw-semibold text-innova-dark small">
+                      Comentarios o Consultas <span class="text-muted fw-normal">(Opcional)</span>
+                    </label>
+                    <div class="input-group">
+                      <span class="input-group-text bg-light border-end-0 text-muted align-items-start pt-2">
+                        <i class="bi bi-chat-left-text"></i>
+                      </span>
+                      <textarea class="form-control border-start-0" id="comentario" name="comentario" rows="2" placeholder="¿Tienes alguna duda o consulta específica?"></textarea>
+                    </div>
+                  </div>
+
+                  <!-- Field: Términos y Condiciones -->
+                  <div class="mb-4">
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" id="terminos" name="terminos" required>
+                      <label class="form-check-label text-muted small" for="terminos">
+                        Acepto los <a href="#" class="text-innova-primary text-decoration-underline" data-bs-toggle="modal" data-bs-target="#terminosModal">términos de uso</a> y la política de privacidad de datos personales. <span class="text-danger">*</span>
+                      </label>
+                      <div class="invalid-feedback" id="terminosFeedback">
+                        Debes aceptar los términos y condiciones para continuar.
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Submit Button -->
+                  <div class="d-grid">
+                    <button type="submit" id="btnSubmit" class="btn btn-innova-primary py-3 fw-bold rounded-pill shadow-sm">
+                      <span class="btn-text">
+                        <i class="bi bi-send-check me-2"></i> Completar Registro de Admisión
+                      </span>
+                      <span class="spinner-border spinner-border-sm d-none me-2" role="status" aria-hidden="true"></span>
+                    </button>
+                  </div>
+                </form>
+
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= SUCCESS MODAL (JAVASCRIPT TRIGGERED) ================= -->
+  <div class="modal fade" id="successModal" tabindex="-1" aria-labelledby="successModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content rounded-4 border-0 shadow">
+        <div class="modal-header border-0 bg-innova-subtle p-4">
+          <div class="d-flex align-items-center gap-3">
+            <div class="success-icon-badge bg-innova-primary text-white rounded-circle d-flex align-items-center justify-content-center">
+              <i class="bi bi-check-lg fs-3 text-innova-accent"></i>
+            </div>
+            <div>
+              <h5 class="modal-title fw-bold text-innova-dark" id="successModalLabel">¡Registro Exitoso!</h5>
+              <small class="text-muted">Bienvenido al proceso de admisión de IT Innova</small>
+            </div>
+          </div>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+        </div>
+        <div class="modal-body p-4">
+          <p class="text-muted mb-3" id="successMessage">
+            ¡Felicidades! Hemos recibido tu postulación satisfactoriamente.
+          </p>
+          <div class="p-3 rounded-3 bg-innova-light border border-light-subtle">
+            <h6 class="fw-bold text-innova-dark mb-2 small text-uppercase">Resumen de Registro:</h6>
+            <div class="small text-muted mb-1">
+              <strong>Postulante:</strong> <span id="summaryNombre" class="text-dark"></span>
+            </div>
+            <div class="small text-muted mb-1">
+              <strong>Correo:</strong> <span id="summaryEmail" class="text-dark"></span>
+            </div>
+            <div class="small text-muted mb-1">
+              <strong>Teléfono:</strong> <span id="summaryTelefono" class="text-dark"></span>
+            </div>
+            <div class="small text-muted mb-1">
+              <strong>Carrera:</strong> <span id="summaryCarrera" class="badge bg-innova-primary text-white"></span>
+            </div>
+            <div class="small text-muted">
+              <strong>Modalidad:</strong> <span id="summaryModalidad" class="text-dark"></span>
+            </div>
+          </div>
+          <p class="small text-muted mt-3 mb-0">
+            <i class="bi bi-envelope-paper text-innova-accent me-1"></i> Te hemos enviado una guía informativa de admisión al correo registrado.
+          </p>
+        </div>
+        <div class="modal-footer border-0 p-4 pt-0">
+          <button type="button" class="btn btn-innova-primary w-100 fw-bold rounded-pill" data-bs-dismiss="modal">
+            Entendido, gracias
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ================= TÉRMINOS Y CONDICIONES MODAL ================= -->
+  <div class="modal fade" id="terminosModal" tabindex="-1" aria-labelledby="terminosModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content rounded-4 border-0 shadow">
+        <div class="modal-header bg-innova-dark text-white p-4">
+          <h5 class="modal-title fw-bold" id="terminosModalLabel">Políticas y Términos de Admisión</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+        </div>
+        <div class="modal-body p-4 small text-muted">
+          <h6 class="fw-bold text-innova-dark">1. Tratamiento de Datos Personales</h6>
+          <p>
+            Al ingresar tus datos en el Instituto Tecnológico Innova, autorizas el tratamiento de los mismos exclusivamente para fines de orientación vocacional, comunicación de beneficios de becas y matrícula académica.
+          </p>
+          <h6 class="fw-bold text-innova-dark">2. Confidencialidad</h6>
+          <p>
+            Tus datos personales no serán compartidos ni comercializados con terceros bajo ningún concepto, respetando las normativas de protección de datos personales vigentes.
+          </p>
+          <h6 class="fw-bold text-innova-dark">3. Comunicación</h6>
+          <p>
+            Podrás recibir llamadas, correos o mensajes vía WhatsApp de parte de nuestros orientadores académicos oficiales para coordinar entrevistas y pruebas diagnósticas.
+          </p>
+        </div>
+        <div class="modal-footer border-0 p-3">
+          <button type="button" class="btn btn-innova-outline fw-bold rounded-pill px-4" data-bs-dismiss="modal">Cerrar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="bg-innova-dark text-white pt-5 pb-4 border-top border-secondary">
+    <div class="container">
+      <div class="row g-4 mb-4">
+        
+        <!-- Column 1: Info (3 columnas) -->
+        <div class="col-lg-3 col-md-6">
+          <div class="d-flex align-items-center gap-2 mb-3">
+            <span class="brand-logo-icon d-inline-flex align-items-center justify-content-center">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 2L2 7L12 12L22 7L12 2Z" stroke="#2bb673" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M2 17L12 22L22 17" stroke="#2bb673" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M2 12L12 17L22 12" stroke="#68d391" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </span>
+            <span class="brand-title">
+              <span class="fw-bold text-white fs-5">IT</span> <span class="fw-extrabold text-innova-accent fs-5">INNOVA</span>
+            </span>
+          </div>
+          <p class="text-gray-300 small leading-relaxed mb-3">
+            El <strong>Instituto Tecnológico Innova</strong> forma profesionales técnicos del más alto nivel, listos para transformar el ecosistema tecnológico regional y global.
+          </p>
+          <div class="d-flex gap-2">
+            <a href="#hero" class="social-link-icon rounded-circle d-flex align-items-center justify-content-center text-white" aria-label="LinkedIn">
+              <i class="bi bi-linkedin"></i>
+            </a>
+            <a href="#hero" class="social-link-icon rounded-circle d-flex align-items-center justify-content-center text-white" aria-label="Facebook">
+              <i class="bi bi-facebook"></i>
+            </a>
+            <a href="#hero" class="social-link-icon rounded-circle d-flex align-items-center justify-content-center text-white" aria-label="Instagram">
+              <i class="bi bi-instagram"></i>
+            </a>
+            <a href="#hero" class="social-link-icon rounded-circle d-flex align-items-center justify-content-center text-white" aria-label="GitHub">
+              <i class="bi bi-github"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Column 2: Quick Links (2 columnas) -->
+        <div class="col-lg-2 col-md-6">
+          <h6 class="text-uppercase fw-bold text-innova-accent mb-3 small">Navegación</h6>
+          <ul class="list-unstyled small">
+            <li class="mb-2"><a href="#hero" class="text-gray-300 text-decoration-none hover-link">Inicio</a></li>
+            <li class="mb-2"><a href="#nosotros" class="text-gray-300 text-decoration-none hover-link">Nosotros</a></li>
+            <li class="mb-2"><a href="#carreras" class="text-gray-300 text-decoration-none hover-link">Carreras</a></li>
+            <li class="mb-2"><a href="#beneficios" class="text-gray-300 text-decoration-none hover-link">Beneficios</a></li>
+            <li class="mb-2"><a href="#registro" class="text-gray-300 text-decoration-none hover-link">Admisión</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 3: Carreras (2 columnas) -->
+        <div class="col-lg-2 col-md-6">
+          <h6 class="text-uppercase fw-bold text-innova-accent mb-3 small">Programas</h6>
+          <ul class="list-unstyled small">
+            <li class="mb-2"><a href="#carreras" class="text-gray-300 text-decoration-none hover-link">Software & IA</a></li>
+            <li class="mb-2"><a href="#carreras" class="text-gray-300 text-decoration-none hover-link">Ciberseguridad</a></li>
+            <li class="mb-2"><a href="#carreras" class="text-gray-300 text-decoration-none hover-link">Ciencia de Datos</a></li>
+            <li class="mb-2"><a href="#carreras" class="text-gray-300 text-decoration-none hover-link">Cloud & DevOps</a></li>
+            <li class="mb-2"><a href="#carreras" class="text-gray-300 text-decoration-none hover-link">Mecatrónica</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 4: Contact & Horarios (2 columnas) -->
+        <div class="col-lg-2 col-md-6">
+          <h6 class="text-uppercase fw-bold text-innova-accent mb-3 small">Atención</h6>
+          <p class="text-gray-300 small mb-2">
+            <i class="bi bi-clock me-1 text-innova-accent"></i> <strong>Lun-Vie:</strong> 8am - 7pm
+          </p>
+          <p class="text-gray-300 small mb-2">
+            <i class="bi bi-clock me-1 text-innova-accent"></i> <strong>Sáb:</strong> 9am - 1pm
+          </p>
+          <p class="text-gray-300 small mb-0">
+            <i class="bi bi-envelope me-1 text-innova-accent"></i> informes@itinnova.edu
+          </p>
+        </div>
+
+        <!-- Column 5: NUEVA COLUMNA DE SUSCRIPCIÓN (3 columnas) -->
+        <div class="col-lg-3 col-md-6">
+          <h6 class="text-uppercase fw-bold text-innova-accent mb-3 small">Boletín Informativo</h6>
+          <p class="text-gray-300 small mb-3">
+            Suscríbete para recibir convocatorias de becas, talleres y novedades.
+          </p>
+          <form id="formSuscripcion" novalidate>
+            <div class="input-group mb-2">
+              <input type="email" id="correoSuscripcion" class="form-control form-control-sm border-0" placeholder="ejemplo@correo.com" required>
+              <button class="btn btn-innova-accent text-dark fw-bold btn-sm" type="submit" id="btnSuscribir">
+                Suscribirme
+              </button>
+            </div>
+            <div id="mensajeSuscripcion" class="small mt-1"></div>
+          </form>
+        </div>
+
+      </div>
+
+      <hr class="border-secondary my-4">
+
+      <div class="row align-items-center small text-gray-300">
+        <div class="col-md-6 text-center text-md-start mb-2 mb-md-0">
+          &copy; 2026 <strong>Instituto Tecnológico Innova</strong>. Todos los derechos reservados.
+        </div>
+        <div class="col-md-6 text-center text-md-end">
+          <span class="me-3">Resolución Ministerial N° 458-2024-MINEDU</span>
+          <a href="#" class="text-gray-300 text-decoration-none hover-link" data-bs-toggle="modal" data-bs-target="#terminosModal">Privacidad</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating Scroll-to-Top Button -->
+  <button id="btnScrollTop" class="btn-scroll-top shadow-lg" type="button" aria-label="Volver arriba">
+    <i class="bi bi-arrow-up"></i>
+  </button>
+
+  <!-- Bootstrap 5.3 Bundle JS (with Popper) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  
+  <!-- Custom Script for Form Validation and Interactive UX -->
+  <script src="script.js"></script>
+</body>
+</html>

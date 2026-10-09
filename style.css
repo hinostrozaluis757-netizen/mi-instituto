@@ -1,0 +1,565 @@
+/* ==========================================================
+   INSTITUTO TECNOLÓGICO INNOVA - ESTILOS PERSONALIZADOS
+   Colores Principales: Verde Oscuro & Gris Claro
+   ========================================================== */
+
+:root {
+  /* Paleta Verde Oscuro */
+  --verde-darkest: #081a12;
+  --verde-oscuro: #102e1f;
+  --verde-primario: #15432d;
+  --verde-medio: #1b5e3f;
+  --verde-acento: #2bb673;
+  --verde-acento-hover: #22995f;
+  --verde-claro-glow: rgba(43, 182, 115, 0.25);
+  
+  /* Paleta Gris Claro */
+  --gris-fondo: #f4f7f5;
+  --gris-claro-alt: #edf1ee;
+  --gris-borde: #dde3e0;
+  --gris-texto-mute: #5f6c65;
+  --gris-texto-oscuro: #212529;
+  --blanco: #ffffff;
+  
+  /* Sombras y transiciones */
+  --shadow-sm: 0 4px 12px rgba(8, 26, 18, 0.05);
+  --shadow-md: 0 8px 24px rgba(8, 26, 18, 0.08);
+  --shadow-lg: 0 16px 36px rgba(8, 26, 18, 0.12);
+  --transition-normal: all 0.28s ease-in-out;
+}
+
+/* Base & Tipografía */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  color: var(--gris-texto-oscuro);
+  background-color: var(--blanco);
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+/* Clases de Color Utilitarias */
+.bg-innova-dark {
+  background-color: var(--verde-darkest) !important;
+}
+
+.bg-innova-dark-alt {
+  background-color: rgba(16, 46, 31, 0.65) !important;
+}
+
+.bg-innova-primary {
+  background-color: var(--verde-primario) !important;
+}
+
+.bg-innova-light {
+  background-color: var(--gris-fondo) !important;
+}
+
+.bg-innova-subtle {
+  background-color: var(--gris-claro-alt) !important;
+}
+
+.text-innova-dark {
+  color: var(--verde-oscuro) !important;
+}
+
+.text-innova-primary {
+  color: var(--verde-primario) !important;
+}
+
+.text-innova-accent {
+  color: var(--verde-acento) !important;
+}
+
+.text-gray-200 {
+  color: #e2e8e5 !important;
+}
+
+.text-gray-300 {
+  color: #c4d1cb !important;
+}
+
+.bg-innova-badge {
+  background-color: #d1fae5 !important;
+  color: var(--verde-oscuro) !important;
+}
+
+.bg-innova-pill {
+  background-color: #e6f4ea !important;
+  color: var(--verde-primario) !important;
+  font-size: 0.75rem;
+  letter-spacing: 0.5px;
+}
+
+.fw-extrabold {
+  font-weight: 800;
+}
+
+.max-w-700 {
+  max-width: 700px;
+}
+
+/* ==========================================================
+   NAVBAR
+   ========================================================== */
+#mainNavbar {
+  transition: var(--transition-normal);
+  border-bottom: 1px solid rgba(43, 182, 115, 0.2);
+}
+
+.brand-logo-icon {
+  width: 44px;
+  height: 44px;
+  background: rgba(43, 182, 115, 0.12);
+  border: 1px solid rgba(43, 182, 115, 0.35);
+  border-radius: 12px;
+  transition: var(--transition-normal);
+}
+
+.navbar-brand:hover .brand-logo-icon {
+  transform: rotate(6deg) scale(1.05);
+  border-color: var(--verde-acento);
+}
+
+.brand-title {
+  letter-spacing: -0.5px;
+  line-height: 1.1;
+}
+
+.brand-subtitle {
+  font-size: 0.68rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.nav-menu .nav-link {
+  color: #cfd8d3 !important;
+  font-size: 0.9rem;
+  padding: 0.5rem 1rem !important;
+  position: relative;
+  transition: var(--transition-normal);
+}
+
+.nav-menu .nav-link:hover,
+.nav-menu .nav-link.active {
+  color: var(--verde-acento) !important;
+}
+
+.nav-menu .nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  height: 2px;
+  background-color: var(--verde-acento);
+  transition: var(--transition-normal);
+  transform: translateX(-50%);
+}
+
+.nav-menu .nav-link.active::after,
+.nav-menu .nav-link:hover::after {
+  width: 60%;
+}
+
+/* ==========================================================
+   BOTONES PERSONALIZADOS
+   ========================================================== */
+.btn-innova-accent {
+  background-color: var(--verde-acento);
+  color: #071910 !important;
+  border: 1px solid var(--verde-acento);
+  transition: var(--transition-normal);
+}
+
+.btn-innova-accent:hover {
+  background-color: var(--verde-acento-hover);
+  border-color: var(--verde-acento-hover);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 18px rgba(43, 182, 115, 0.35);
+}
+
+.btn-innova-primary {
+  background-color: var(--verde-primario);
+  color: var(--blanco) !important;
+  border: 1px solid var(--verde-primario);
+  transition: var(--transition-normal);
+}
+
+.btn-innova-primary:hover {
+  background-color: var(--verde-oscuro);
+  border-color: var(--verde-oscuro);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(16, 46, 31, 0.25);
+}
+
+.btn-innova-outline {
+  color: var(--verde-primario);
+  border: 1.5px solid var(--verde-primario);
+  background: transparent;
+  transition: var(--transition-normal);
+}
+
+.btn-innova-outline:hover {
+  background-color: var(--verde-primario);
+  color: var(--blanco) !important;
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-sm);
+}
+
+/* ==========================================================
+   HERO SECTION
+   ========================================================== */
+.hero-section {
+  background: linear-gradient(135deg, var(--verde-darkest) 0%, #0d281a 60%, var(--verde-oscuro) 100%);
+  min-height: 85vh;
+  display: flex;
+  align-items: center;
+}
+
+.hero-bg-pattern {
+  pointer-events: none;
+  opacity: 0.9;
+}
+
+.badge-innova {
+  background: rgba(43, 182, 115, 0.15);
+  border: 1px solid rgba(43, 182, 115, 0.35);
+  backdrop-filter: blur(6px);
+}
+
+.badge-dot {
+  width: 8px;
+  height: 8px;
+  background-color: var(--verde-acento);
+  border-radius: 50%;
+  display: inline-block;
+  animation: pulseDot 2s infinite;
+}
+
+@keyframes pulseDot {
+  0% { transform: scale(0.95); opacity: 0.7; box-shadow: 0 0 0 0 rgba(43, 182, 115, 0.7); }
+  70% { transform: scale(1.1); opacity: 1; box-shadow: 0 0 0 8px rgba(43, 182, 115, 0); }
+  100% { transform: scale(0.95); opacity: 0.7; box-shadow: 0 0 0 0 rgba(43, 182, 115, 0); }
+}
+
+.hero-headline {
+  letter-spacing: -1px;
+  line-height: 1.15;
+}
+
+.hero-description {
+  font-size: 1.15rem;
+}
+
+.hero-graphic-card {
+  background: rgba(13, 36, 25, 0.85);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(43, 182, 115, 0.25) !important;
+  transition: var(--transition-normal);
+}
+
+.hero-graphic-card:hover {
+  border-color: rgba(43, 182, 115, 0.5) !important;
+  transform: translateY(-4px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.35) !important;
+}
+
+.hero-dot {
+  width: 11px;
+  height: 11px;
+  display: inline-block;
+}
+
+.hero-vector-art {
+  filter: drop-shadow(0 6px 14px rgba(43, 182, 115, 0.15));
+}
+
+.stat-card {
+  padding: 0.5rem 0;
+}
+
+/* ==========================================================
+   NOSOTROS / INSTITUCIONAL
+   ========================================================== */
+.icon-circle {
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.institution-stats-container {
+  border: 1px solid var(--gris-borde) !important;
+}
+
+.progress {
+  height: 8px;
+  border-radius: 999px;
+  background-color: var(--gris-claro-alt);
+}
+
+.progress-bar {
+  border-radius: 999px;
+  transition: width 1s ease-in-out;
+}
+
+/* ==========================================================
+   CARRERAS SECTION (CARDS)
+   ========================================================== */
+.career-card {
+  border: 1px solid var(--gris-borde) !important;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+  background-color: var(--blanco);
+}
+
+.career-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 16px 32px rgba(16, 46, 31, 0.12) !important;
+  border-color: var(--verde-acento) !important;
+}
+
+.career-img-container {
+  height: 200px;
+  background-color: var(--gris-claro-alt);
+  background-image: radial-gradient(var(--verde-acento) 0.8px, transparent 0.8px);
+  background-size: 16px 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.career-card-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease, opacity 0.3s ease;
+  display: block;
+}
+
+/* Ocultar borde o ícono de imagen rota antes de que JS inyecte el src */
+.career-card-img[src=""],
+.career-card-img:not([src]) {
+  opacity: 0;
+}
+
+.career-card-img[src]:not([src=""]) {
+  opacity: 1;
+}
+
+.career-card:hover .career-card-img {
+  transform: scale(1.06);
+}
+
+.career-card:hover,
+.transition-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 16px 32px rgba(16, 46, 31, 0.12) !important;
+  border-color: var(--verde-acento) !important;
+}
+
+.transition-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.career-card .card-title {
+  font-size: 1.25rem;
+  letter-spacing: -0.3px;
+}
+
+/* ==========================================================
+   BENEFICIOS SECTION
+   ========================================================== */
+.benefit-card {
+  border: 1px solid var(--gris-borde) !important;
+  transition: var(--transition-normal);
+}
+
+.benefit-card:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-md) !important;
+  border-color: var(--verde-acento) !important;
+}
+
+.benefit-icon-wrapper {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  background: #e8f5ed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: var(--transition-normal);
+}
+
+.benefit-card:hover .benefit-icon-wrapper {
+  background: var(--verde-primario);
+}
+
+.benefit-card:hover .benefit-icon-wrapper i {
+  color: var(--blanco) !important;
+}
+
+/* ==========================================================
+   FORMULARIO DE REGISTRO
+   ========================================================== */
+.registration-wrapper {
+  border: 1px solid var(--gris-borde) !important;
+}
+
+.contact-icon-box {
+  width: 38px;
+  height: 38px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  border: 1px solid rgba(43, 182, 115, 0.3);
+}
+
+/* Form inputs styling */
+.form-control,
+.form-select {
+  padding: 0.72rem 1rem;
+  font-size: 0.95rem;
+  border-color: var(--gris-borde);
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.form-control:focus,
+.form-select:focus {
+  border-color: var(--verde-primario);
+  box-shadow: 0 0 0 0.25rem rgba(21, 67, 45, 0.18);
+}
+
+.input-group-text {
+  border-color: var(--gris-borde);
+  color: var(--gris-texto-mute) !important;
+}
+
+.form-control.is-valid,
+.form-select.is-valid {
+  border-color: #198754 !important;
+  background-image: none;
+}
+
+.form-control.is-invalid,
+.form-select.is-invalid {
+  border-color: #dc3545 !important;
+  background-image: none;
+}
+
+.input-group:has(.form-control:focus) .input-group-text,
+.input-group:has(.form-select:focus) .input-group-text {
+  border-color: var(--verde-primario);
+  color: var(--verde-primario) !important;
+}
+
+.input-group:has(.form-control.is-invalid) .input-group-text,
+.input-group:has(.form-select.is-invalid) .input-group-text {
+  border-color: #dc3545;
+}
+
+.invalid-feedback {
+  font-size: 0.8rem;
+  margin-top: 0.35rem;
+}
+
+/* Modal and badge styling */
+.success-icon-badge {
+  width: 50px;
+  height: 50px;
+}
+
+/* ==========================================================
+   FOOTER
+   ========================================================== */
+footer {
+  background-color: var(--verde-darkest);
+}
+
+.social-link-icon {
+  width: 36px;
+  height: 36px;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  text-decoration: none;
+  transition: var(--transition-normal);
+}
+
+.social-link-icon:hover {
+  background: var(--verde-acento);
+  color: #071910 !important;
+  border-color: var(--verde-acento);
+  transform: translateY(-3px);
+}
+
+.hover-link {
+  transition: var(--transition-normal);
+}
+
+.hover-link:hover {
+  color: var(--verde-acento) !important;
+  padding-left: 4px;
+}
+
+/* ==========================================================
+   BOTÓN VOLVER ARRIBA
+   ========================================================== */
+.btn-scroll-top {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  width: 46px;
+  height: 46px;
+  background-color: var(--verde-primario);
+  color: var(--blanco);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  cursor: pointer;
+  z-index: 1040;
+  opacity: 0;
+  visibility: hidden;
+  transition: var(--transition-normal);
+}
+
+.btn-scroll-top.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+.btn-scroll-top:hover {
+  background-color: var(--verde-acento);
+  color: #071910;
+  transform: translateY(-4px);
+  box-shadow: 0 8px 18px rgba(43, 182, 115, 0.4);
+}
+
+/* ==========================================================
+   RESPONSIVIDAD Y AJUSTES
+   ========================================================== */
+@media (max-width: 991.98px) {
+  .hero-section {
+    text-align: center;
+    padding-top: 4rem;
+  }
+  
+  .nav-menu {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    margin-top: 1rem;
+  }
+}
